@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="recebeDados.php" method="get">
+       
+        <fieldset>
+
+            <legend>Meu Formulario</legend>
+
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" required placeholder="Informe seu nome" size="30" disabled value="Guilherme">
+            </p>
+            
+            <p>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                title="Informe o CPF corretamente seguindo: xxx.xxx.xxx-xx" 
+                maxlength="14" placeholder="Informe seu CPF" size="30" disabled value="555.555.555-55">
+            </p>
+
+            <P>
+                <label for="email">Email</label>
+                <input type="email" name="email" required size="30" placeholder="Informe seu email">
+            </P>
+
+            <p>
+                <label for="Senha">Senha:</label>
+                <input type="password" name="senha" required placeholder="Informe senha." size="30" maxlength="8">
+            </p>
+        
+            <p>
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" name="sexo" value="m" checked>Mascuino<br>
+                <input type="radio" name="sexo" value="f">Feminino<br>
+                <input type="radio" name="sexo" value="o">outros<br>
+            </p>
+        
+            <p>
+                <label for="tecPre">Informe a tecnologia preferida: </label><br>
+                <input type="checkbox" name="html">Html<br>
+                <input type="checkbox" name="html">Java<br>
+                <input type="checkbox" name="html">Python<br>
+                <input type="checkbox" name="html">CSS<br>
+                <input type="checkbox" name="html">php<br>
+            </p>
+            <p>
+                <label for="">Selecione um curso:</label>
+                <select name="cursos">
+                    <optgroup label="tlgd">
+                    <option value="">selecione</option>
+                    <option value="php">php</option>
+                    <option value="java">java</option>
+                    <option value="python">python</option>
+                    <option value="css">css</option>
+                    </optgroup>
+
+                    <optgroup label="infra">
+                    <option value="c++">c++</option>
+                    <option value="c#">c#</option>
+                    <option value="banco de dados">banco de dados</option>
+                    <option value="redes">redes</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="data">Data</label>
+                <input type="date" name="data">
+            </p>
+            <p>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora">
+            </p>
+            <p>
+                <label for="Data-hora">data-hora</label>
+                <input type="datetime-local" name="data-hora">
+            </p>
+            <p>
+                <label for="semana">Semana</label>
+                <input type="week" name="semana">
+            </p>
+            <p>
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" name="arquivo">
+            </p>
+            <p>
+                <label for="descrisao">Descrisão</label><br>
+                <textarea name="descrisao" cols="30" rows="10" placeholder="informe a sua duvida meu chapa"></textarea>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+
+        </fieldset>
+
+    </form>    
+</body>
+
+</html>
